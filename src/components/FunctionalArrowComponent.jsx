@@ -7,10 +7,14 @@ export const FunctionalArrowComponent = () => {
         console.log("Button clicked, Data coming from parent component as function")
     }
 
+    const getValueFromChild = (value) => {
+        console.log(value)
+    }
+
     return (
         <div>
             FunctionalArrowComponent
-            <PropsExample parentComponetHandler={parentComponetHandler} flag={false} name="Vikas" />
+            <PropsExample getValueFromParent={getValueFromChild} parentComponetHandler={parentComponetHandler} flag={false} name="Vikas" />
 
         </div>
 
